@@ -1,6 +1,6 @@
 FROM docker.elastic.co/logstash/logstash:6.4.1
 
-USER ROOT
+USER root
 
 RUN yum install -y unzip
 
