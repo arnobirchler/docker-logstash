@@ -1,5 +1,7 @@
 FROM docker.elastic.co/logstash/logstash:6.4.1
 
+USER ROOT
+
 RUN yum install -y unzip
 
 RUN logstash-plugin install logstash-filter-jdbc_streaming
